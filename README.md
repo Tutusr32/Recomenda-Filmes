@@ -18,11 +18,12 @@ ratings.csv
 🚀 Como Rodar o Projeto
 1️⃣ Clone o repositório:
 git clone https://github.com/Tutusr32/Recomenda-Filmes.git
+
 cd Recomenda-Filmes
 
 2️⃣ Instale as dependências:
 
-É necessário ter Python 3.x instalado. Depois, instale as bibliotecas necessárias:
+É necessário ter Python 3.13.7 instalado. Depois, instale as bibliotecas necessárias:
 
 pip install pandas
 
@@ -34,7 +35,7 @@ Baixe a versão ml-latest-small neste link:
 Extraia os arquivos e coloque a pasta ml-latest-small dentro do diretório do projeto.
 
 4️⃣ Execute o código:
-python recomendador.py
+python main.py
 
 5️⃣ Informe o nome de um filme:
 
@@ -42,7 +43,7 @@ Digite o título de um filme presente no dataset (exemplo: Toy Story (1995)) e o
 
 🛠️ Tecnologias Utilizadas
 
-Python 3.x
+Python 3.13.7
 
 Pandas
 
