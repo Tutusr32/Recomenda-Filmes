@@ -17,8 +17,8 @@ ratings.csv
 
 🚀 Como Rodar o Projeto
 1️⃣ Clone o repositório:
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/Tutusr32/Recomenda-Filmes.git
+cd Recomenda-Filmes
 
 2️⃣ Instale as dependências:
 
@@ -46,14 +46,13 @@ Python 3.x
 
 Pandas
 
-📊 Exemplo de Saída
-nome do filme: Toy Story (1995)
+## 📊 Exemplo de Saída  
 
-             filme       Nota  % Semelhança
-0   Toy Story 2 (1999)  3.56       0.72
-1       Bug's Life (1998)  3.45       0.65
-2  Monsters, Inc. (2001)  3.78       0.63
-...
+| Filme                 | Nota | % Semelhança |
+|-----------------------|------|--------------|
+| Toy Story 2 (1999)    | 3.56 | 0.72         |
+| Bug's Life, A (1998)  | 3.45 | 0.65         |
+| Monsters, Inc. (2001) | 3.78 | 0.63         |
 
 📌 Observações
 
