@@ -9,7 +9,7 @@ A solução foi construída utilizando Filtragem Colaborativa baseada em itens.
 
 Processamento: Criei uma matriz de pivô onde cada linha é um usuário e cada coluna um filme.
 
-Correlação: Utilizei o método .corrwith() do Pandas para calcular a correlação de Pearson entre as avaliações de um filme escolhido e todos os outros da base.
+Correlação: Utilizei o método .corr() do Pandas para calcular a correlação de Pearson entre as avaliações de um filme escolhido e todos os outros da base.
 
 Resultado: O sistema retorna uma lista ordenada dos filmes que possuem o maior "match" de notas com o título consultado.
 
