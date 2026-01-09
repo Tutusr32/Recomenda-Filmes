@@ -1,62 +1,37 @@
-🎬 Sistema de Recomendação de Filmes
+🎬 Movie Matcher: Motor de Recomendação com Pandas
+Este projeto representa um marco importante na minha trajetória como desenvolvedor. Foi o meu primeiro projeto de grande escala, onde saí da sintaxe básica do Python para aplicar lógica de análise de dados real em um problema do cotidiano: "O que assistir agora?".
 
-Este é o meu primeiro projeto em Python, onde desenvolvi um sistema simples de recomendação de filmes usando análise de correlação entre notas de usuários.
-O objetivo foi aprender na prática como manipular dados com pandas e aplicar conceitos básicos de recomendação.
+🚀 O Desafio
+O objetivo era criar um sistema que recomendasse filmes não apenas por gênero, mas pelo comportamento de consumo dos usuários.
 
-⚡ Importante: neste projeto utilizei a IA como auxílio para estruturar algumas partes, mas entendo 100% do código e consigo recriá-lo por conta própria.
+🧠 Lógica e Inteligência
+A solução foi construída utilizando Filtragem Colaborativa baseada em itens.
 
-📂 Dados Utilizados
+Processamento: Criei uma matriz de pivô onde cada linha é um usuário e cada coluna um filme.
 
-Os dados usados fazem parte do MovieLens Dataset (ml-latest-small):
+Correlação: Utilizei o método .corrwith() do Pandas para calcular a correlação de Pearson entre as avaliações de um filme escolhido e todos os outros da base.
 
-movies.csv
- → contém informações dos filmes (ID, título e gênero).
-
-ratings.csv
- → contém as avaliações feitas por usuários (nota de 0.5 a 5.0).
-
-🚀 Como Rodar o Projeto
-1️⃣ Clone o repositório:
-git clone https://github.com/Tutusr32/Recomenda-Filmes.git
-
-cd Recomenda-Filmes
-
-2️⃣ Instale as dependências:
-
-É necessário ter Python 3.13.7 instalado. Depois, instale as bibliotecas necessárias:
-
-pip install pandas
-
-3️⃣ Baixe o dataset do MovieLens:
-
-Baixe a versão ml-latest-small neste link:
-👉 https://grouplens.org/datasets/movielens/
-
-Extraia os arquivos e coloque a pasta ml-latest-small dentro do diretório do projeto.
-
-4️⃣ Execute o código:
-python main.py
-
-5️⃣ Informe o nome de um filme:
-
-Digite o título de um filme presente no dataset (exemplo: Toy Story (1995)) e o programa retornará recomendações de filmes similares com nota média e porcentagem de semelhança.
+Resultado: O sistema retorna uma lista ordenada dos filmes que possuem o maior "match" de notas com o título consultado.
 
 🛠️ Tecnologias Utilizadas
+Python 3
 
-Python 3.13.7
+Pandas: Manipulação e análise da matriz de dados.
 
-Pandas
+Numpy: Operações matemáticas para suporte à correlação.
 
-## 📊 Exemplo de Saída  
+📈 Lições de Evolução (O que este projeto me ensinou)
+Como este repositório serve de registro para o meu crescimento técnico, listei pontos que identifiquei após a conclusão:
 
-| Filme                 | Nota | % Semelhança |
-|-----------------------|------|--------------|
-| Toy Story 2 (1999)    | 3.56 | 0.72         |
-| Bug's Life, A (1998)  | 3.45 | 0.65         |
-| Monsters, Inc. (2001) | 3.78 | 0.63         |
+Limpeza de Dados: Aprendi a importância de lidar com valores nulos (NaN) que surgem quando um usuário não avaliou um filme.
 
-📌 Observações
+Filtro de Relevância: Percebi que correlações perfeitas (1.0) podem ocorrer em filmes com pouquíssimas avaliações. Em projetos futuros, a aplicação de um filtro de count() antes da correlação é essencial.
 
-Este é um projeto inicial de estudo, focado em entender manipulação de dados e sistemas de recomendação.
+Experiência do Usuário (UX): O sistema hoje é funcional via terminal. O próximo passo de evolução seria tratar erros de digitação e buscas parciais.
 
-A IA foi usada apenas como auxílio no processo de aprendizado, mas todo o código foi estudado e é de total compreensão minha.
+Como rodar
+Certifique-se de ter o Python e o Pandas instalados.
+
+Clone o repositório.
+
+Execute o arquivo principal e digite o nome de um filme presente no dataset quando solicitado.
